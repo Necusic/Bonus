@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fdf6e9"
-    tools:context=".MainActivity">
+    tools:context=".PresentationLayer.MainActivity">
 
     <!-- activity_main.xml -->
     <LinearLayout
@@ -19,27 +19,31 @@
             android:layout_width="match_parent"
             android:textColor="#A0AAB5"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
             android:hint="@string/phone_number_hint"
             android:inputType="phone" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/formatButton"
-            android:layout_width="wrap_content"
+            android:layout_width="145dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="#CCAF91"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
             android:text="@string/format_button_text" />
 
         <TextView
             android:id="@+id/resultText"
+            android:layout_marginTop="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
             android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="362dp"
-            android:layout_height="628dp"
+            android:layout_width="1111dp"
+            android:layout_height="631dp"
             app:srcCompat="@drawable/key" />
 
     </LinearLayout>
